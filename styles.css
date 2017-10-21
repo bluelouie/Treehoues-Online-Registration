@@ -1,0 +1,316 @@
+/*------------------------------------------Global Layout*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  font-family: 'Merriweather', sans-serif;
+  background-color: white;
+  font-weight: normal;
+}
+
+p {
+  color: #828385;
+  font: caption;
+  font-size: .87em;
+}
+
+/*---------------------------------Header*/
+
+.main-header h2,
+.main-header p{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-header h1 {
+  text-align: center;
+  background-color: #2D3945;
+  padding: 20px;
+  margin:  0 0 25px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.main-header h2 {
+  font-size: 1.2em;
+  margin: 0 auto 15px;
+}
+
+.main-header p {
+  color: #B2B4B6;
+  font-weight: lighter;
+  font-size: .9em;
+  padding-bottom: 30px;
+  margin: 0 auto -13px auto;
+  border-bottom: 4px solid #2D3945;
+  height: 70px;
+}
+
+/*---------------------------------Main section*/
+
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-sec {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#contact {
+  border-top: 2px solid #2D3945;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
+label {
+  font-weight: lighter;
+  font-size: .9em;
+}
+
+.form input {
+  width: 100%;
+  margin: 15px 0 15px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #EFF0F1;
+  border-style: none;
+}
+
+#zipcode {
+  width: 145px;
+}
+
+.form input:focus {
+  outline-color: #336699;
+}
+
+/*---------------------------------Placeholder Edits*/
+
+
+*::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+  color: #C6C9CD;
+}
+*:-moz-placeholder {
+  /* FF 4-18 */
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+}
+*::-moz-placeholder {
+  /* FF 19+ */
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+}
+
+/*---------------------------------Select dropdown  Edits*/
+
+.form select  {
+  width: 100%;
+  margin: 15px 0 15px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #EFF0F1;
+  border-style: none;
+  font-weight: lighter;
+  color: #C6C9CD;
+  font-size: .9em;
+}
+
+.form select:focus {
+  outline-color: #336699;
+}
+
+
+
+
+.form select option {
+  font-style: italic;
+  font-weight: lighter;
+  color: black;
+}
+
+.selectdiv {
+  z-index: 20;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectdiv p{
+  font-size: .7em;
+  color: black;
+  transform: rotate(90deg);
+  right: 2px;
+  bottom: 18px;
+  position: absolute;
+}
+
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+/*---------------------------------Bottom selection Edits*/
+
+.secdiv h2 {
+  border-top: 2px solid #2D3945;
+  padding-top: 20px;
+}
+
+
+.secdiv input[type=checkbox] ,
+.secdiv input[type=radio] {
+  width: auto;
+  margin: 5px 15px 12px 0px;
+  color: #828385;
+  font: caption;
+  font-size: .87em;
+}
+
+.etc {
+  display: inline-block;
+  margin: 1px 1px 1px 1px;
+  color: #828385;
+  font: caption;
+  font-size: .87em;
+}
+
+/*Textarea Edits*/
+
+
+.secdiv textarea {
+  width: 100%;
+  height: 105px;
+  margin: 15px 0 15px;
+  border-radius: 5px;
+  background-color: #EFF0F1;
+  border-style: none;
+  resize: none;
+}
+
+.secdiv textarea:focus {
+  outline-color: #336699;
+}
+
+
+.secdiv button {
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  font-family: serif;
+  padding: 15px;
+  background-color: #4EBBB5;
+  border-radius: 5px;
+  border-style: none;
+  margin-top: 15px;
+}
+
+.secdiv button:focus {
+  outline-color: #336699;
+}
+
+footer h3 {
+  width: 100%;
+  margin: 35px auto 200px;
+  text-align: center;
+  display: inline-block;
+  color: #828385;
+  font: caption;
+  font-style: italic;
+  font-size: .87em;
+
+}
+
+/*---------------------------------Media Querys*/
+
+
+@media (min-width: 768px) {
+  .form-sec,
+  .main-header p {
+    width: 750px;
+
+  }
+
+  .form input {
+    width: 75%;
+    margin: -12px 0 40px;
+  }
+
+  .form label {
+    width: 25%;
+  }
+
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .selectdiv {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .selectdiv label {
+    width: 25%
+  }
+
+  .selectdiv select {
+    width: 75%;
+    margin: -12px 0 40px;
+  }
+
+  .selectdiv p {
+    right: 6px;
+    bottom: 44px;
+  }
+
+
+  #zipcode {
+    width: 25%;
+    margin: -12px auto 40px 0;
+  }
+
+  #contact {
+    padding-top: 33px;
+    margin-bottom: 45px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
