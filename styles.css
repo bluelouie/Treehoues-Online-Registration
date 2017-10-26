@@ -65,7 +65,7 @@ fieldset {
   font-weight: lighter;
   font-size: .9em;
   padding-bottom: 30px;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 3px auto;
   border-bottom: 4px solid #2D3945;
   height: 70px;
 }
@@ -93,7 +93,7 @@ fieldset {
 
 .form input {
   width: 100%;
-  margin: 15px 0 15px;
+  margin: 12px 0 12px;
   padding: 15px;
   border-radius: 5px;
   background-color: #EFF0F1;
@@ -192,10 +192,12 @@ fieldset {
 
 /*---------------------------------Bottom selection Edits*/
 
-.fieldset-two h2 {
+.fieldset-two legend {
   border-top: 2px solid #2D3945;
   padding-top: 40px;
-  margin: 21px 0px;
+  margin: 10px 0px;
+  width: 100%;
+  font-size: 1.2em;
 }
 
 
@@ -298,6 +300,7 @@ footer h3 {
   #zipcode {
     display: inline-block;
     align-self: center;
+    margin-bottom: 40px;
   }
 
 
